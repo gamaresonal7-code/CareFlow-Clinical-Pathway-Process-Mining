@@ -1,0 +1,490 @@
+{
+  "summary": {
+    "total_cases": 1200,
+    "total_events": 9448,
+    "total_activities": 14,
+    "distinct_variants": 11,
+    "model_fitness_pct": 100.0,
+    "fully_fitting_traces": 1200
+  },
+  "nodes": [
+    {
+      "id": "Clinical Treatment & Medication Admin",
+      "label": "Clinical Treatment & Medication Admin",
+      "execution_count": 1200,
+      "department": "ED Treatment Bays",
+      "avg_cost_usd": 150.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Diagnostic Imaging Order",
+      "label": "Diagnostic Imaging Order",
+      "execution_count": 498,
+      "department": "ED Acute Ward",
+      "avg_cost_usd": 35.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Diagnostic Radiology (X-Ray)",
+      "label": "Diagnostic Radiology (X-Ray)",
+      "execution_count": 498,
+      "department": "Radiology Department",
+      "avg_cost_usd": 240.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Discharge Planning & Summary",
+      "label": "Discharge Planning & Summary",
+      "execution_count": 1023,
+      "department": "Discharge Lounge",
+      "avg_cost_usd": 50.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Hospital Inpatient Admission",
+      "label": "Hospital Inpatient Admission",
+      "execution_count": 177,
+      "department": "Inpatient Ward",
+      "avg_cost_usd": 1200.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Laboratory Blood Test Order",
+      "label": "Laboratory Blood Test Order",
+      "execution_count": 492,
+      "department": "ED Acute Ward",
+      "avg_cost_usd": 40.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Laboratory Specimen Analysis",
+      "label": "Laboratory Specimen Analysis",
+      "execution_count": 492,
+      "department": "Central Pathology",
+      "avg_cost_usd": 110.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Missing Paperwork Flagged",
+      "label": "Missing Paperwork Flagged",
+      "execution_count": 210,
+      "department": "Radiology Department",
+      "avg_cost_usd": 50.0,
+      "is_bottleneck": true
+    },
+    {
+      "id": "Observation & Vital Re-check",
+      "label": "Observation & Vital Re-check",
+      "execution_count": 838,
+      "department": "ED Short Stay Unit",
+      "avg_cost_usd": 80.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Physician Initial Consultation",
+      "label": "Physician Initial Consultation",
+      "execution_count": 1200,
+      "department": "ED Acute Ward",
+      "avg_cost_usd": 180.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Physician Re-consultation",
+      "label": "Physician Re-consultation",
+      "execution_count": 210,
+      "department": "ED Acute Ward",
+      "avg_cost_usd": 120.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Registration & Arrival",
+      "label": "Registration & Arrival",
+      "execution_count": 1200,
+      "department": "Front Desk",
+      "avg_cost_usd": 25.0,
+      "is_bottleneck": false
+    },
+    {
+      "id": "Return to Triage (Paperwork Resolution)",
+      "label": "Return to Triage (Paperwork Resolution)",
+      "execution_count": 210,
+      "department": "Emergency Triage",
+      "avg_cost_usd": 65.0,
+      "is_bottleneck": true
+    },
+    {
+      "id": "Triage Assessment",
+      "label": "Triage Assessment",
+      "execution_count": 1200,
+      "department": "Emergency Triage",
+      "avg_cost_usd": 45.0,
+      "is_bottleneck": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "Registration & Arrival",
+      "target": "Triage Assessment",
+      "frequency": 1200,
+      "avg_duration_minutes": 14.4,
+      "median_duration_minutes": 13.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Triage Assessment",
+      "target": "Physician Initial Consultation",
+      "frequency": 1200,
+      "avg_duration_minutes": 38.0,
+      "median_duration_minutes": 37.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Clinical Treatment & Medication Admin",
+      "target": "Observation & Vital Re-check",
+      "frequency": 838,
+      "avg_duration_minutes": 34.7,
+      "median_duration_minutes": 35.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Observation & Vital Re-check",
+      "target": "Discharge Planning & Summary",
+      "frequency": 661,
+      "avg_duration_minutes": 15.1,
+      "median_duration_minutes": 15.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Diagnostic Imaging Order",
+      "target": "Diagnostic Radiology (X-Ray)",
+      "frequency": 498,
+      "avg_duration_minutes": 22.8,
+      "median_duration_minutes": 23.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Physician Initial Consultation",
+      "target": "Diagnostic Imaging Order",
+      "frequency": 498,
+      "avg_duration_minutes": 8.5,
+      "median_duration_minutes": 9.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Laboratory Blood Test Order",
+      "target": "Laboratory Specimen Analysis",
+      "frequency": 492,
+      "avg_duration_minutes": 45.0,
+      "median_duration_minutes": 45.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Laboratory Specimen Analysis",
+      "target": "Clinical Treatment & Medication Admin",
+      "frequency": 492,
+      "avg_duration_minutes": 17.1,
+      "median_duration_minutes": 17.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Clinical Treatment & Medication Admin",
+      "target": "Discharge Planning & Summary",
+      "frequency": 362,
+      "avg_duration_minutes": 15.2,
+      "median_duration_minutes": 15.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Physician Initial Consultation",
+      "target": "Clinical Treatment & Medication Admin",
+      "frequency": 362,
+      "avg_duration_minutes": 17.7,
+      "median_duration_minutes": 18.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Physician Initial Consultation",
+      "target": "Laboratory Blood Test Order",
+      "frequency": 340,
+      "avg_duration_minutes": 7.5,
+      "median_duration_minutes": 8.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Diagnostic Radiology (X-Ray)",
+      "target": "Missing Paperwork Flagged",
+      "frequency": 210,
+      "avg_duration_minutes": 9.0,
+      "median_duration_minutes": 9.0,
+      "is_loopback": true,
+      "flow_type": "DEVIANT_LOOPBACK"
+    },
+    {
+      "source": "Missing Paperwork Flagged",
+      "target": "Return to Triage (Paperwork Resolution)",
+      "frequency": 210,
+      "avg_duration_minutes": 17.4,
+      "median_duration_minutes": 18.0,
+      "is_loopback": true,
+      "flow_type": "DEVIANT_LOOPBACK"
+    },
+    {
+      "source": "Return to Triage (Paperwork Resolution)",
+      "target": "Physician Re-consultation",
+      "frequency": 210,
+      "avg_duration_minutes": 22.3,
+      "median_duration_minutes": 22.0,
+      "is_loopback": true,
+      "flow_type": "DEVIANT_LOOPBACK"
+    },
+    {
+      "source": "Diagnostic Radiology (X-Ray)",
+      "target": "Clinical Treatment & Medication Admin",
+      "frequency": 203,
+      "avg_duration_minutes": 17.4,
+      "median_duration_minutes": 17.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Observation & Vital Re-check",
+      "target": "Hospital Inpatient Admission",
+      "frequency": 177,
+      "avg_duration_minutes": 14.8,
+      "median_duration_minutes": 15.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Physician Re-consultation",
+      "target": "Clinical Treatment & Medication Admin",
+      "frequency": 143,
+      "avg_duration_minutes": 17.9,
+      "median_duration_minutes": 18.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Diagnostic Radiology (X-Ray)",
+      "target": "Laboratory Blood Test Order",
+      "frequency": 85,
+      "avg_duration_minutes": 7.4,
+      "median_duration_minutes": 7.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    },
+    {
+      "source": "Physician Re-consultation",
+      "target": "Laboratory Blood Test Order",
+      "frequency": 67,
+      "avg_duration_minutes": 7.5,
+      "median_duration_minutes": 7.0,
+      "is_loopback": false,
+      "flow_type": "STANDARD_PATHWAY"
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "Variant #1",
+      "case_count": 362,
+      "percentage": 30.17,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Clinical Treatment & Medication Admin",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #2",
+      "case_count": 250,
+      "percentage": 20.83,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Laboratory Blood Test Order",
+        "Laboratory Specimen Analysis",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #3",
+      "case_count": 166,
+      "percentage": 13.83,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #4",
+      "case_count": 121,
+      "percentage": 10.08,
+      "has_paperwork_loop": true,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Missing Paperwork Flagged",
+        "Return to Triage (Paperwork Resolution)",
+        "Physician Re-consultation",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #5",
+      "case_count": 90,
+      "percentage": 7.5,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Laboratory Blood Test Order",
+        "Laboratory Specimen Analysis",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Hospital Inpatient Admission"
+      ]
+    },
+    {
+      "variant_id": "Variant #6",
+      "case_count": 66,
+      "percentage": 5.5,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Laboratory Blood Test Order",
+        "Laboratory Specimen Analysis",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #7",
+      "case_count": 58,
+      "percentage": 4.83,
+      "has_paperwork_loop": true,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Missing Paperwork Flagged",
+        "Return to Triage (Paperwork Resolution)",
+        "Physician Re-consultation",
+        "Laboratory Blood Test Order",
+        "Laboratory Specimen Analysis",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Discharge Planning & Summary"
+      ]
+    },
+    {
+      "variant_id": "Variant #8",
+      "case_count": 37,
+      "percentage": 3.08,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Hospital Inpatient Admission"
+      ]
+    },
+    {
+      "variant_id": "Variant #9",
+      "case_count": 22,
+      "percentage": 1.83,
+      "has_paperwork_loop": true,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Missing Paperwork Flagged",
+        "Return to Triage (Paperwork Resolution)",
+        "Physician Re-consultation",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Hospital Inpatient Admission"
+      ]
+    },
+    {
+      "variant_id": "Variant #10",
+      "case_count": 19,
+      "percentage": 1.58,
+      "has_paperwork_loop": false,
+      "path": [
+        "Registration & Arrival",
+        "Triage Assessment",
+        "Physician Initial Consultation",
+        "Diagnostic Imaging Order",
+        "Diagnostic Radiology (X-Ray)",
+        "Laboratory Blood Test Order",
+        "Laboratory Specimen Analysis",
+        "Clinical Treatment & Medication Admin",
+        "Observation & Vital Re-check",
+        "Hospital Inpatient Admission"
+      ]
+    }
+  ],
+  "roi_metrics": {
+    "affected_patients_count": 210,
+    "radiology_loopback_rate_pct": 42.2,
+    "avg_minutes_lost_per_patient": 66.6,
+    "total_wait_hours_wasted": 233.2,
+    "estimated_annual_cost_waste_usd": 592200.0,
+    "actionable_intervention": "Mandate Form 4B digital checklist at Triage Intake before diagnostic orders are routed.",
+    "projected_wait_reduction_mins": 66.6
+  },
+  "ideal_pathway": [
+    "Registration & Arrival",
+    "Triage Assessment",
+    "Physician Initial Consultation",
+    "Diagnostic Imaging Order",
+    "Diagnostic Radiology (X-Ray)",
+    "Clinical Treatment & Medication Admin",
+    "Observation & Vital Re-check",
+    "Discharge Planning & Summary"
+  ]
+}
