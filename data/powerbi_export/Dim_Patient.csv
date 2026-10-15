@@ -1,0 +1,1201 @@
+case_id,age,gender,esi_score,triage_acuity,arrival_mode,archetype,had_radiology,had_loopback,num_events,total_duration_minutes,total_cost_usd,disposition
+PAT-10001,56,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,78.0,450.0,Discharged
+PAT-10002,45,Male,1,Resuscitation,Walk-in,Critical,False,False,8,123.0,1830.0,Admitted
+PAT-10003,43,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,183.0,1040.0,Discharged
+PAT-10004,43,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,227.0,1040.0,Discharged
+PAT-10005,76,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10006,61,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10007,39,Male,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,124.0,1955.0,Admitted
+PAT-10008,57,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10009,52,Other,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-10010,18,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,198.0,680.0,Discharged
+PAT-10011,29,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,117.0,450.0,Discharged
+PAT-10012,53,Male,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,167.0,2190.0,Admitted
+PAT-10013,74,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10014,43,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,142.0,805.0,Discharged
+PAT-10015,38,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,165.0,680.0,Discharged
+PAT-10016,49,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-10017,37,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,164.0,680.0,Discharged
+PAT-10018,42,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,190.0,680.0,Discharged
+PAT-10019,47,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,115.0,450.0,Discharged
+PAT-10020,28,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,193.0,1040.0,Discharged
+PAT-10021,62,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,250.0,1190.0,Discharged
+PAT-10022,26,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,117.0,450.0,Discharged
+PAT-10023,24,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10024,51,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,143.0,1830.0,Admitted
+PAT-10025,61,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10026,51,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,236.0,1190.0,Discharged
+PAT-10027,45,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,148.0,805.0,Discharged
+PAT-10028,42,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,186.0,1040.0,Discharged
+PAT-10029,39,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10030,67,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,167.0,1040.0,Discharged
+PAT-10031,53,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,134.0,805.0,Discharged
+PAT-10032,41,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,285.0,1190.0,Discharged
+PAT-10033,35,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,70.0,450.0,Discharged
+PAT-10034,59,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,187.0,680.0,Discharged
+PAT-10035,66,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10036,64,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,85.0,450.0,Discharged
+PAT-10037,32,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,169.0,2190.0,Admitted
+PAT-10038,42,Other,1,Resuscitation,Walk-in,Critical,False,False,8,134.0,1830.0,Admitted
+PAT-10039,39,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10040,44,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10041,62,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10042,72,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10043,54,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-10044,36,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,149.0,680.0,Discharged
+PAT-10045,47,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,192.0,1040.0,Discharged
+PAT-10046,76,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,144.0,680.0,Discharged
+PAT-10047,49,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,140.0,805.0,Discharged
+PAT-10048,42,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,157.0,805.0,Discharged
+PAT-10049,44,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,209.0,1040.0,Discharged
+PAT-10050,54,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,135.0,1830.0,Admitted
+PAT-10051,33,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,False,10,175.0,2105.0,Admitted
+PAT-10052,38,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10053,64,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,205.0,955.0,Discharged
+PAT-10054,53,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,139.0,450.0,Discharged
+PAT-10055,49,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10056,65,Other,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,106.0,1955.0,Admitted
+PAT-10057,35,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,152.0,680.0,Discharged
+PAT-10058,42,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,134.0,805.0,Discharged
+PAT-10059,53,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,198.0,680.0,Discharged
+PAT-10060,52,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10061,22,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10062,40,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,158.0,1955.0,Admitted
+PAT-10063,45,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,131.0,450.0,Discharged
+PAT-10064,55,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,183.0,680.0,Discharged
+PAT-10065,52,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,127.0,805.0,Discharged
+PAT-10066,46,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10067,18,Other,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,122.0,1955.0,Admitted
+PAT-10068,47,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,146.0,680.0,Discharged
+PAT-10069,49,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,210.0,955.0,Discharged
+PAT-10070,92,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10071,44,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,243.0,1190.0,Discharged
+PAT-10072,53,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10073,68,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,147.0,680.0,Discharged
+PAT-10074,61,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-10075,73,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,185.0,1040.0,Discharged
+PAT-10076,22,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,199.0,680.0,Discharged
+PAT-10077,30,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,159.0,805.0,Discharged
+PAT-10078,37,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-10079,20,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,128.0,1955.0,Admitted
+PAT-10080,49,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10081,31,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10082,75,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,182.0,680.0,Discharged
+PAT-10083,33,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10084,42,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,181.0,680.0,Discharged
+PAT-10085,62,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,122.0,1955.0,Admitted
+PAT-10086,25,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10087,19,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,203.0,680.0,Discharged
+PAT-10088,51,Male,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,217.0,955.0,Discharged
+PAT-10089,52,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,163.0,805.0,Discharged
+PAT-10090,62,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,131.0,805.0,Discharged
+PAT-10091,57,Female,1,Resuscitation,Walk-in,Critical,False,False,8,123.0,1830.0,Admitted
+PAT-10092,53,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10093,35,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10094,52,Male,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,109.0,805.0,Discharged
+PAT-10095,53,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,201.0,955.0,Discharged
+PAT-10096,35,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,188.0,1040.0,Discharged
+PAT-10097,81,Other,1,Resuscitation,Walk-in,Critical,False,False,8,143.0,680.0,Discharged
+PAT-10098,56,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,182.0,2190.0,Admitted
+PAT-10099,30,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,204.0,955.0,Discharged
+PAT-10100,62,Male,1,Resuscitation,Ambulance,Critical,False,False,8,151.0,680.0,Discharged
+PAT-10101,65,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,189.0,680.0,Discharged
+PAT-10102,55,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,198.0,955.0,Discharged
+PAT-10103,43,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,139.0,805.0,Discharged
+PAT-10104,34,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,175.0,805.0,Discharged
+PAT-10105,46,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,135.0,805.0,Discharged
+PAT-10106,54,Female,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10107,48,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,170.0,805.0,Discharged
+PAT-10108,74,Other,2,Emergent,Ambulance,Acute_Medical,False,False,8,110.0,680.0,Discharged
+PAT-10109,59,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,221.0,955.0,Discharged
+PAT-10110,32,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,156.0,680.0,Discharged
+PAT-10111,28,Other,1,Resuscitation,Walk-in,Critical,False,False,8,148.0,680.0,Discharged
+PAT-10112,56,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,209.0,1040.0,Discharged
+PAT-10113,43,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10114,60,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,100.0,450.0,Discharged
+PAT-10115,56,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10116,46,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,169.0,1830.0,Admitted
+PAT-10117,32,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10118,20,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,176.0,680.0,Discharged
+PAT-10119,51,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,204.0,1040.0,Discharged
+PAT-10120,25,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10121,32,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,238.0,1190.0,Discharged
+PAT-10122,50,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,198.0,955.0,Discharged
+PAT-10123,49,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,191.0,680.0,Discharged
+PAT-10124,27,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10125,67,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,175.0,1040.0,Discharged
+PAT-10126,66,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,148.0,805.0,Discharged
+PAT-10127,57,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10128,57,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,221.0,1190.0,Discharged
+PAT-10129,57,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,183.0,680.0,Discharged
+PAT-10130,92,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,287.0,1190.0,Discharged
+PAT-10131,65,Female,1,Resuscitation,Walk-in,Critical,False,False,8,145.0,680.0,Discharged
+PAT-10132,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10133,34,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,151.0,805.0,Discharged
+PAT-10134,43,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10135,89,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10136,18,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,74.0,450.0,Discharged
+PAT-10137,39,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,181.0,955.0,Discharged
+PAT-10138,67,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,121.0,450.0,Discharged
+PAT-10139,35,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,148.0,805.0,Discharged
+PAT-10140,60,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,172.0,680.0,Discharged
+PAT-10141,48,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-10142,36,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,204.0,1040.0,Discharged
+PAT-10143,18,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,211.0,1040.0,Discharged
+PAT-10144,51,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10145,33,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,161.0,805.0,Discharged
+PAT-10146,45,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10147,57,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,131.0,450.0,Discharged
+PAT-10148,63,Male,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,185.0,955.0,Discharged
+PAT-10149,39,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,141.0,805.0,Discharged
+PAT-10150,36,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10151,25,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,181.0,680.0,Discharged
+PAT-10152,64,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10153,86,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,174.0,1040.0,Discharged
+PAT-10154,66,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,160.0,805.0,Discharged
+PAT-10155,70,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,134.0,1830.0,Admitted
+PAT-10156,35,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,119.0,805.0,Discharged
+PAT-10157,55,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10158,61,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10159,18,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,147.0,1830.0,Admitted
+PAT-10160,29,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10161,77,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,145.0,680.0,Discharged
+PAT-10162,22,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10163,73,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,159.0,1040.0,Discharged
+PAT-10164,22,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,125.0,805.0,Discharged
+PAT-10165,30,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10166,56,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,155.0,1830.0,Admitted
+PAT-10167,49,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,153.0,2105.0,Admitted
+PAT-10168,41,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,167.0,680.0,Discharged
+PAT-10169,76,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10170,25,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,143.0,680.0,Discharged
+PAT-10171,45,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,102.0,450.0,Discharged
+PAT-10172,58,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,90.0,450.0,Discharged
+PAT-10173,53,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,191.0,955.0,Discharged
+PAT-10174,36,Male,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,148.0,805.0,Discharged
+PAT-10175,37,Other,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,100.0,1955.0,Admitted
+PAT-10176,63,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,191.0,1040.0,Discharged
+PAT-10177,64,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10178,53,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,176.0,2105.0,Admitted
+PAT-10179,33,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,154.0,680.0,Discharged
+PAT-10180,37,Female,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,127.0,1955.0,Admitted
+PAT-10181,47,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,187.0,1040.0,Discharged
+PAT-10182,50,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,141.0,450.0,Discharged
+PAT-10183,57,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,196.0,1040.0,Discharged
+PAT-10184,44,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,151.0,680.0,Discharged
+PAT-10185,62,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,154.0,805.0,Discharged
+PAT-10186,62,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,164.0,680.0,Discharged
+PAT-10187,71,Other,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,158.0,2190.0,Admitted
+PAT-10188,48,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10189,53,Male,1,Resuscitation,Ambulance,Critical,False,False,8,124.0,680.0,Discharged
+PAT-10190,45,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,183.0,1040.0,Discharged
+PAT-10191,33,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,127.0,1955.0,Admitted
+PAT-10192,85,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,173.0,805.0,Discharged
+PAT-10193,68,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-10194,62,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10195,47,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,188.0,955.0,Discharged
+PAT-10196,31,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10197,65,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,226.0,1040.0,Discharged
+PAT-10198,45,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10199,55,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10200,37,Male,2,Emergent,Private Transport,Acute_Medical,False,False,8,144.0,1830.0,Admitted
+PAT-10201,52,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,77.0,450.0,Discharged
+PAT-10202,38,Other,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,187.0,1040.0,Discharged
+PAT-10203,39,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,213.0,1040.0,Discharged
+PAT-10204,52,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,176.0,680.0,Discharged
+PAT-10205,21,Female,1,Resuscitation,Walk-in,Critical,False,False,8,125.0,680.0,Discharged
+PAT-10206,22,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10207,35,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,190.0,955.0,Discharged
+PAT-10208,44,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-10209,63,Male,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,124.0,805.0,Discharged
+PAT-10210,45,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,204.0,955.0,Discharged
+PAT-10211,47,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10212,42,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,137.0,805.0,Discharged
+PAT-10213,53,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,156.0,1830.0,Admitted
+PAT-10214,33,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,156.0,680.0,Discharged
+PAT-10215,46,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,241.0,2340.0,Admitted
+PAT-10216,55,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,236.0,1190.0,Discharged
+PAT-10217,52,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,136.0,450.0,Discharged
+PAT-10218,48,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,167.0,955.0,Discharged
+PAT-10219,48,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,86.0,450.0,Discharged
+PAT-10220,56,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,127.0,450.0,Discharged
+PAT-10221,86,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,190.0,680.0,Discharged
+PAT-10222,34,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10223,87,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,165.0,955.0,Discharged
+PAT-10224,33,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10225,18,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,False,10,200.0,2105.0,Admitted
+PAT-10226,38,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,131.0,450.0,Discharged
+PAT-10227,54,Other,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,178.0,1040.0,Discharged
+PAT-10228,81,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,199.0,680.0,Discharged
+PAT-10229,31,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,184.0,955.0,Discharged
+PAT-10230,56,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-10231,24,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,166.0,1830.0,Admitted
+PAT-10232,80,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10233,69,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,186.0,955.0,Discharged
+PAT-10234,39,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-10235,18,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,203.0,2105.0,Admitted
+PAT-10236,72,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,171.0,805.0,Discharged
+PAT-10237,45,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10238,70,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,250.0,1190.0,Discharged
+PAT-10239,48,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,195.0,1040.0,Discharged
+PAT-10240,48,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,212.0,1190.0,Discharged
+PAT-10241,39,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,125.0,450.0,Discharged
+PAT-10242,59,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,184.0,1830.0,Admitted
+PAT-10243,50,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10244,57,Male,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,193.0,955.0,Discharged
+PAT-10245,20,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,134.0,1830.0,Admitted
+PAT-10246,70,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,182.0,2190.0,Admitted
+PAT-10247,75,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,221.0,2340.0,Admitted
+PAT-10248,50,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,106.0,805.0,Discharged
+PAT-10249,85,Other,1,Resuscitation,Walk-in,Critical,False,False,8,125.0,680.0,Discharged
+PAT-10250,79,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,81.0,450.0,Discharged
+PAT-10251,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10252,72,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,135.0,450.0,Discharged
+PAT-10253,67,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10254,18,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,253.0,1190.0,Discharged
+PAT-10255,43,Other,1,Resuscitation,Walk-in,Critical,False,False,8,109.0,1830.0,Admitted
+PAT-10256,60,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,175.0,1830.0,Admitted
+PAT-10257,77,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,257.0,955.0,Discharged
+PAT-10258,23,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10259,18,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,123.0,805.0,Discharged
+PAT-10260,47,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-10261,18,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,164.0,1830.0,Admitted
+PAT-10262,46,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,214.0,1040.0,Discharged
+PAT-10263,54,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-10264,31,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,141.0,1955.0,Admitted
+PAT-10265,46,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,136.0,450.0,Discharged
+PAT-10266,65,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10267,38,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,149.0,680.0,Discharged
+PAT-10268,33,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10269,46,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10270,29,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,165.0,1830.0,Admitted
+PAT-10271,83,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,134.0,680.0,Discharged
+PAT-10272,48,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,159.0,805.0,Discharged
+PAT-10273,35,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,200.0,1040.0,Discharged
+PAT-10274,51,Female,1,Resuscitation,Walk-in,Critical,False,False,8,113.0,1830.0,Admitted
+PAT-10275,45,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,152.0,680.0,Discharged
+PAT-10276,44,Female,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,121.0,805.0,Discharged
+PAT-10277,38,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,191.0,955.0,Discharged
+PAT-10278,37,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10279,20,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10280,72,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,160.0,805.0,Discharged
+PAT-10281,58,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-10282,53,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,128.0,680.0,Discharged
+PAT-10283,45,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,202.0,1040.0,Discharged
+PAT-10284,30,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,127.0,450.0,Discharged
+PAT-10285,34,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,156.0,805.0,Discharged
+PAT-10286,22,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,139.0,450.0,Discharged
+PAT-10287,36,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,145.0,805.0,Discharged
+PAT-10288,28,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10289,78,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-10290,63,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10291,49,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10292,32,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,146.0,1830.0,Admitted
+PAT-10293,29,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,165.0,2190.0,Admitted
+PAT-10294,44,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,182.0,1040.0,Discharged
+PAT-10295,64,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,157.0,680.0,Discharged
+PAT-10296,82,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,193.0,680.0,Discharged
+PAT-10297,22,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,181.0,1040.0,Discharged
+PAT-10298,58,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,142.0,450.0,Discharged
+PAT-10299,36,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10300,39,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,260.0,1190.0,Discharged
+PAT-10301,48,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,153.0,1830.0,Admitted
+PAT-10302,33,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,143.0,450.0,Discharged
+PAT-10303,43,Female,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10304,31,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10305,37,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10306,61,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,131.0,1955.0,Admitted
+PAT-10307,49,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,132.0,805.0,Discharged
+PAT-10308,61,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,133.0,450.0,Discharged
+PAT-10309,36,Male,1,Resuscitation,Ambulance,Critical,False,False,8,126.0,680.0,Discharged
+PAT-10310,58,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,117.0,450.0,Discharged
+PAT-10311,18,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,True,13,220.0,1190.0,Discharged
+PAT-10312,48,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10313,59,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10314,18,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,184.0,1040.0,Discharged
+PAT-10315,36,Female,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,151.0,805.0,Discharged
+PAT-10316,48,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10317,66,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-10318,37,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10319,57,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,135.0,680.0,Discharged
+PAT-10320,73,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,194.0,1040.0,Discharged
+PAT-10321,58,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,185.0,2190.0,Admitted
+PAT-10322,44,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10323,54,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,185.0,680.0,Discharged
+PAT-10324,37,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,182.0,680.0,Discharged
+PAT-10325,49,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10326,45,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,195.0,680.0,Discharged
+PAT-10327,54,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,154.0,805.0,Discharged
+PAT-10328,40,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,132.0,450.0,Discharged
+PAT-10329,55,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,115.0,450.0,Discharged
+PAT-10330,40,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,199.0,955.0,Discharged
+PAT-10331,63,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,154.0,805.0,Discharged
+PAT-10332,42,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10333,18,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,153.0,805.0,Discharged
+PAT-10334,29,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-10335,48,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,164.0,955.0,Discharged
+PAT-10336,78,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-10337,62,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,136.0,450.0,Discharged
+PAT-10338,18,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,171.0,805.0,Discharged
+PAT-10339,21,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-10340,68,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,123.0,1955.0,Admitted
+PAT-10341,59,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-10342,88,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,272.0,1190.0,Discharged
+PAT-10343,39,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,178.0,2105.0,Admitted
+PAT-10344,32,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10345,49,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,171.0,1040.0,Discharged
+PAT-10346,39,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,154.0,805.0,Discharged
+PAT-10347,66,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,145.0,805.0,Discharged
+PAT-10348,38,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10349,43,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,188.0,1040.0,Discharged
+PAT-10350,30,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,145.0,1830.0,Admitted
+PAT-10351,61,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-10352,31,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10353,55,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10354,81,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10355,18,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,204.0,955.0,Discharged
+PAT-10356,74,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,194.0,1040.0,Discharged
+PAT-10357,53,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,129.0,805.0,Discharged
+PAT-10358,27,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,136.0,805.0,Discharged
+PAT-10359,49,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-10360,61,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,148.0,805.0,Discharged
+PAT-10361,33,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,194.0,2190.0,Admitted
+PAT-10362,56,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,150.0,680.0,Discharged
+PAT-10363,76,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,149.0,955.0,Discharged
+PAT-10364,38,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,158.0,680.0,Discharged
+PAT-10365,30,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,149.0,680.0,Discharged
+PAT-10366,45,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,140.0,805.0,Discharged
+PAT-10367,49,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,217.0,1190.0,Discharged
+PAT-10368,67,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10369,45,Other,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,215.0,1040.0,Discharged
+PAT-10370,40,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,176.0,2105.0,Admitted
+PAT-10371,29,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,114.0,805.0,Discharged
+PAT-10372,18,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10373,24,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10374,24,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,100.0,450.0,Discharged
+PAT-10375,43,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-10376,20,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10377,18,Female,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,187.0,1040.0,Discharged
+PAT-10378,47,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,115.0,680.0,Discharged
+PAT-10379,81,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10380,68,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,179.0,955.0,Discharged
+PAT-10381,43,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10382,28,Other,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,177.0,2190.0,Admitted
+PAT-10383,92,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,223.0,1040.0,Discharged
+PAT-10384,49,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10385,51,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,150.0,1830.0,Admitted
+PAT-10386,45,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,138.0,805.0,Discharged
+PAT-10387,47,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,181.0,680.0,Discharged
+PAT-10388,38,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-10389,43,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,125.0,1830.0,Admitted
+PAT-10390,75,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,146.0,805.0,Discharged
+PAT-10391,70,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,174.0,680.0,Discharged
+PAT-10392,18,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,211.0,1040.0,Discharged
+PAT-10393,22,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,175.0,680.0,Discharged
+PAT-10394,33,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,161.0,1830.0,Admitted
+PAT-10395,64,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,88.0,450.0,Discharged
+PAT-10396,70,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-10397,60,Male,1,Resuscitation,Ambulance,Critical,False,False,8,109.0,1830.0,Admitted
+PAT-10398,27,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,261.0,1190.0,Discharged
+PAT-10399,38,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,156.0,1830.0,Admitted
+PAT-10400,56,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,255.0,1190.0,Discharged
+PAT-10401,43,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,230.0,955.0,Discharged
+PAT-10402,41,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,125.0,805.0,Discharged
+PAT-10403,41,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,174.0,2190.0,Admitted
+PAT-10404,68,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10405,58,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10406,42,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10407,53,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,205.0,2190.0,Admitted
+PAT-10408,25,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,168.0,805.0,Discharged
+PAT-10409,38,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-10410,66,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,145.0,1955.0,Admitted
+PAT-10411,19,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,199.0,955.0,Discharged
+PAT-10412,58,Other,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,201.0,1040.0,Discharged
+PAT-10413,18,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,175.0,1040.0,Discharged
+PAT-10414,78,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10415,38,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,152.0,805.0,Discharged
+PAT-10416,55,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10417,50,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,195.0,680.0,Discharged
+PAT-10418,50,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,213.0,1040.0,Discharged
+PAT-10419,53,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,189.0,955.0,Discharged
+PAT-10420,18,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,137.0,1955.0,Admitted
+PAT-10421,51,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-10422,44,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,218.0,680.0,Discharged
+PAT-10423,38,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,139.0,450.0,Discharged
+PAT-10424,33,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,260.0,1190.0,Discharged
+PAT-10425,51,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10426,30,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,135.0,805.0,Discharged
+PAT-10427,66,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-10428,56,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10429,52,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,206.0,1040.0,Discharged
+PAT-10430,65,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10431,18,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,177.0,1830.0,Admitted
+PAT-10432,24,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,172.0,680.0,Discharged
+PAT-10433,57,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10434,34,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,237.0,1190.0,Discharged
+PAT-10435,36,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10436,22,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,183.0,1830.0,Admitted
+PAT-10437,30,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,191.0,1040.0,Discharged
+PAT-10438,66,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,207.0,1040.0,Discharged
+PAT-10439,56,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10440,51,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10441,37,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10442,50,Female,2,Emergent,Ambulance,Combined_Diagnostic,True,True,13,206.0,2340.0,Admitted
+PAT-10443,68,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,89.0,450.0,Discharged
+PAT-10444,35,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,226.0,1190.0,Discharged
+PAT-10445,47,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10446,79,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,154.0,1830.0,Admitted
+PAT-10447,60,Female,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,128.0,805.0,Discharged
+PAT-10448,37,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,133.0,450.0,Discharged
+PAT-10449,59,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,115.0,450.0,Discharged
+PAT-10450,19,Other,1,Resuscitation,Walk-in,Critical,False,False,8,151.0,1830.0,Admitted
+PAT-10451,46,Male,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,259.0,1190.0,Discharged
+PAT-10452,59,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,165.0,680.0,Discharged
+PAT-10453,54,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10454,58,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,181.0,1040.0,Discharged
+PAT-10455,63,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10456,56,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10457,55,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,155.0,805.0,Discharged
+PAT-10458,51,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,142.0,805.0,Discharged
+PAT-10459,28,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,True,13,219.0,2340.0,Admitted
+PAT-10460,66,Male,2,Emergent,Ambulance,Acute_Medical,False,False,8,131.0,680.0,Discharged
+PAT-10461,47,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10462,60,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,118.0,1955.0,Admitted
+PAT-10463,64,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10464,38,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,157.0,805.0,Discharged
+PAT-10465,40,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10466,42,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,202.0,680.0,Discharged
+PAT-10467,70,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10468,31,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,170.0,1830.0,Admitted
+PAT-10469,74,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10470,51,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10471,52,Other,1,Resuscitation,Ambulance,Critical,False,False,8,136.0,1830.0,Admitted
+PAT-10472,64,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10473,49,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10474,67,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,221.0,1190.0,Discharged
+PAT-10475,38,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,141.0,1955.0,Admitted
+PAT-10476,73,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,158.0,1830.0,Admitted
+PAT-10477,39,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-10478,74,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10479,40,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,152.0,1830.0,Admitted
+PAT-10480,42,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10481,29,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,153.0,680.0,Discharged
+PAT-10482,34,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,136.0,805.0,Discharged
+PAT-10483,47,Female,1,Resuscitation,Walk-in,Critical,False,False,8,144.0,1830.0,Admitted
+PAT-10484,52,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10485,65,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,137.0,805.0,Discharged
+PAT-10486,44,Other,1,Resuscitation,Ambulance,Critical,False,False,8,147.0,1830.0,Admitted
+PAT-10487,27,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,128.0,805.0,Discharged
+PAT-10488,54,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,124.0,1955.0,Admitted
+PAT-10489,50,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10490,56,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,171.0,1040.0,Discharged
+PAT-10491,36,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,207.0,1040.0,Discharged
+PAT-10492,38,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-10493,36,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,171.0,805.0,Discharged
+PAT-10494,69,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,203.0,955.0,Discharged
+PAT-10495,73,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,119.0,680.0,Discharged
+PAT-10496,37,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,199.0,955.0,Discharged
+PAT-10497,38,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10498,59,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,179.0,1040.0,Discharged
+PAT-10499,75,Male,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,143.0,1040.0,Discharged
+PAT-10500,80,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10501,36,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,234.0,1040.0,Discharged
+PAT-10502,41,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,148.0,450.0,Discharged
+PAT-10503,53,Other,2,Emergent,Ambulance,Combined_Diagnostic,True,False,10,180.0,2105.0,Admitted
+PAT-10504,54,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,204.0,2105.0,Admitted
+PAT-10505,44,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,198.0,1040.0,Discharged
+PAT-10506,33,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10507,47,Other,2,Emergent,Ambulance,Combined_Diagnostic,True,True,13,224.0,2340.0,Admitted
+PAT-10508,80,Other,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,182.0,2190.0,Admitted
+PAT-10509,38,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,125.0,450.0,Discharged
+PAT-10510,52,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,213.0,955.0,Discharged
+PAT-10511,92,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10512,38,Other,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,210.0,1040.0,Discharged
+PAT-10513,60,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,226.0,1040.0,Discharged
+PAT-10514,81,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,120.0,805.0,Discharged
+PAT-10515,58,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10516,67,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,130.0,805.0,Discharged
+PAT-10517,62,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,191.0,680.0,Discharged
+PAT-10518,57,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,74.0,450.0,Discharged
+PAT-10519,72,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,151.0,1040.0,Discharged
+PAT-10520,59,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10521,44,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10522,50,Other,2,Emergent,Ambulance,Acute_Medical,False,False,8,166.0,1830.0,Admitted
+PAT-10523,54,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,173.0,805.0,Discharged
+PAT-10524,40,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10525,51,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10526,48,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10527,59,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,244.0,1190.0,Discharged
+PAT-10528,86,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,187.0,1040.0,Discharged
+PAT-10529,52,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10530,76,Other,1,Resuscitation,Walk-in,Critical,False,False,8,142.0,1830.0,Admitted
+PAT-10531,58,Male,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,165.0,1040.0,Discharged
+PAT-10532,51,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,123.0,680.0,Discharged
+PAT-10533,39,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,140.0,1830.0,Admitted
+PAT-10534,51,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10535,50,Female,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,132.0,1955.0,Admitted
+PAT-10536,35,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10537,37,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10538,54,Female,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,123.0,1955.0,Admitted
+PAT-10539,76,Other,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10540,46,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,156.0,680.0,Discharged
+PAT-10541,21,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,253.0,1190.0,Discharged
+PAT-10542,18,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10543,29,Other,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,170.0,2190.0,Admitted
+PAT-10544,60,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,223.0,1190.0,Discharged
+PAT-10545,24,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10546,63,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10547,59,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,195.0,1040.0,Discharged
+PAT-10548,46,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,132.0,450.0,Discharged
+PAT-10549,20,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,181.0,680.0,Discharged
+PAT-10550,35,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,186.0,1040.0,Discharged
+PAT-10551,43,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-10552,54,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10553,25,Other,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10554,73,Male,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,247.0,1190.0,Discharged
+PAT-10555,54,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,159.0,805.0,Discharged
+PAT-10556,56,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,167.0,1830.0,Admitted
+PAT-10557,59,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10558,71,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,181.0,1040.0,Discharged
+PAT-10559,51,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,154.0,680.0,Discharged
+PAT-10560,60,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10561,35,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10562,80,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,178.0,955.0,Discharged
+PAT-10563,50,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10564,35,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10565,39,Other,1,Resuscitation,Ambulance,Critical,False,False,8,139.0,1830.0,Admitted
+PAT-10566,18,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,149.0,1955.0,Admitted
+PAT-10567,39,Male,1,Resuscitation,Walk-in,Critical,False,False,8,137.0,1830.0,Admitted
+PAT-10568,18,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,195.0,2190.0,Admitted
+PAT-10569,62,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,88.0,450.0,Discharged
+PAT-10570,55,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,161.0,1830.0,Admitted
+PAT-10571,30,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,121.0,450.0,Discharged
+PAT-10572,47,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,226.0,955.0,Discharged
+PAT-10573,47,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10574,27,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10575,44,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10576,48,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10577,43,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,134.0,450.0,Discharged
+PAT-10578,35,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,136.0,680.0,Discharged
+PAT-10579,29,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10580,42,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,195.0,680.0,Discharged
+PAT-10581,37,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,158.0,680.0,Discharged
+PAT-10582,58,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,141.0,805.0,Discharged
+PAT-10583,73,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,134.0,805.0,Discharged
+PAT-10584,64,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10585,49,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,160.0,680.0,Discharged
+PAT-10586,36,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10587,64,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10588,59,Male,1,Resuscitation,Walk-in,Critical,False,False,8,133.0,1830.0,Admitted
+PAT-10589,71,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,115.0,450.0,Discharged
+PAT-10590,51,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10591,79,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,161.0,680.0,Discharged
+PAT-10592,51,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,231.0,1190.0,Discharged
+PAT-10593,36,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10594,39,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,135.0,1955.0,Admitted
+PAT-10595,57,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,79.0,450.0,Discharged
+PAT-10596,37,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,166.0,805.0,Discharged
+PAT-10597,79,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,207.0,1040.0,Discharged
+PAT-10598,55,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,146.0,805.0,Discharged
+PAT-10599,48,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,199.0,1040.0,Discharged
+PAT-10600,50,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,203.0,955.0,Discharged
+PAT-10601,43,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,156.0,805.0,Discharged
+PAT-10602,18,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,175.0,680.0,Discharged
+PAT-10603,39,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10604,76,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,212.0,1040.0,Discharged
+PAT-10605,52,Male,3,Urgent,Private Transport,Acute_Medical,False,False,8,187.0,680.0,Discharged
+PAT-10606,66,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10607,67,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,126.0,450.0,Discharged
+PAT-10608,47,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,155.0,2190.0,Admitted
+PAT-10609,59,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,200.0,955.0,Discharged
+PAT-10610,19,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,158.0,1955.0,Admitted
+PAT-10611,74,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10612,72,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,172.0,805.0,Discharged
+PAT-10613,56,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10614,52,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,135.0,1830.0,Admitted
+PAT-10615,47,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-10616,69,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10617,61,Female,2,Emergent,Ambulance,Trauma_Imaging,True,True,11,180.0,1040.0,Discharged
+PAT-10618,18,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-10619,41,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,199.0,1040.0,Discharged
+PAT-10620,27,Male,2,Emergent,Private Transport,Combined_Diagnostic,True,True,13,235.0,1190.0,Discharged
+PAT-10621,24,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,179.0,680.0,Discharged
+PAT-10622,68,Male,1,Resuscitation,Walk-in,Critical,False,False,8,136.0,1830.0,Admitted
+PAT-10623,47,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,142.0,805.0,Discharged
+PAT-10624,56,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10625,49,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10626,24,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,146.0,805.0,Discharged
+PAT-10627,19,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,125.0,805.0,Discharged
+PAT-10628,40,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10629,41,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,138.0,1830.0,Admitted
+PAT-10630,41,Other,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,118.0,805.0,Discharged
+PAT-10631,42,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10632,85,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10633,66,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,186.0,1040.0,Discharged
+PAT-10634,52,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10635,46,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,117.0,450.0,Discharged
+PAT-10636,47,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,129.0,450.0,Discharged
+PAT-10637,61,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,102.0,450.0,Discharged
+PAT-10638,46,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,108.0,450.0,Discharged
+PAT-10639,64,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10640,54,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,165.0,680.0,Discharged
+PAT-10641,85,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,129.0,805.0,Discharged
+PAT-10642,45,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10643,67,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10644,29,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,191.0,680.0,Discharged
+PAT-10645,36,Female,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,153.0,805.0,Discharged
+PAT-10646,82,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,136.0,1830.0,Admitted
+PAT-10647,63,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10648,56,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10649,91,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,203.0,955.0,Discharged
+PAT-10650,46,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,166.0,680.0,Discharged
+PAT-10651,67,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,231.0,1190.0,Discharged
+PAT-10652,69,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,168.0,1830.0,Admitted
+PAT-10653,77,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,141.0,1830.0,Admitted
+PAT-10654,27,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10655,46,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,116.0,1955.0,Admitted
+PAT-10656,53,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,100.0,450.0,Discharged
+PAT-10657,77,Other,2,Emergent,Ambulance,Acute_Medical,False,False,8,150.0,1830.0,Admitted
+PAT-10658,56,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,245.0,1190.0,Discharged
+PAT-10659,69,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10660,25,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10661,42,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,140.0,805.0,Discharged
+PAT-10662,72,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,151.0,680.0,Discharged
+PAT-10663,44,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10664,48,Female,1,Resuscitation,Walk-in,Critical,False,False,8,137.0,1830.0,Admitted
+PAT-10665,76,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10666,32,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,161.0,680.0,Discharged
+PAT-10667,36,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,166.0,680.0,Discharged
+PAT-10668,24,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,140.0,680.0,Discharged
+PAT-10669,77,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,146.0,1830.0,Admitted
+PAT-10670,66,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,198.0,680.0,Discharged
+PAT-10671,65,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,82.0,450.0,Discharged
+PAT-10672,42,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,182.0,680.0,Discharged
+PAT-10673,22,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,143.0,680.0,Discharged
+PAT-10674,18,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,222.0,1190.0,Discharged
+PAT-10675,72,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,153.0,805.0,Discharged
+PAT-10676,58,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,236.0,1190.0,Discharged
+PAT-10677,61,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-10678,53,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10679,34,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,83.0,450.0,Discharged
+PAT-10680,42,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,True,13,216.0,2340.0,Admitted
+PAT-10681,30,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,136.0,680.0,Discharged
+PAT-10682,28,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,186.0,1040.0,Discharged
+PAT-10683,64,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,127.0,1955.0,Admitted
+PAT-10684,19,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10685,30,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,164.0,680.0,Discharged
+PAT-10686,43,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,121.0,450.0,Discharged
+PAT-10687,49,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10688,23,Other,1,Resuscitation,Walk-in,Critical,False,False,8,179.0,680.0,Discharged
+PAT-10689,19,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,130.0,450.0,Discharged
+PAT-10690,55,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,208.0,1040.0,Discharged
+PAT-10691,52,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10692,72,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,73.0,450.0,Discharged
+PAT-10693,50,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,160.0,680.0,Discharged
+PAT-10694,57,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,206.0,955.0,Discharged
+PAT-10695,35,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-10696,36,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-10697,25,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10698,35,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,161.0,680.0,Discharged
+PAT-10699,42,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,171.0,805.0,Discharged
+PAT-10700,70,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,136.0,680.0,Discharged
+PAT-10701,32,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10702,86,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,135.0,1830.0,Admitted
+PAT-10703,59,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,143.0,805.0,Discharged
+PAT-10704,55,Female,1,Resuscitation,Private Transport,Critical,False,False,8,152.0,1830.0,Admitted
+PAT-10705,48,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10706,45,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,121.0,450.0,Discharged
+PAT-10707,37,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10708,23,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-10709,33,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,260.0,1190.0,Discharged
+PAT-10710,77,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,182.0,680.0,Discharged
+PAT-10711,58,Female,1,Resuscitation,Walk-in,Critical,False,False,8,164.0,1830.0,Admitted
+PAT-10712,77,Other,1,Resuscitation,Private Transport,Critical,False,False,8,158.0,1830.0,Admitted
+PAT-10713,37,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10714,29,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10715,48,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,165.0,805.0,Discharged
+PAT-10716,34,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,147.0,680.0,Discharged
+PAT-10717,52,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,170.0,680.0,Discharged
+PAT-10718,19,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,201.0,955.0,Discharged
+PAT-10719,18,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,143.0,805.0,Discharged
+PAT-10720,54,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,136.0,450.0,Discharged
+PAT-10721,78,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-10722,55,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10723,58,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,137.0,805.0,Discharged
+PAT-10724,49,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10725,51,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,185.0,1040.0,Discharged
+PAT-10726,22,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,178.0,680.0,Discharged
+PAT-10727,34,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10728,70,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,155.0,805.0,Discharged
+PAT-10729,28,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,173.0,2190.0,Admitted
+PAT-10730,42,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,135.0,805.0,Discharged
+PAT-10731,69,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,147.0,805.0,Discharged
+PAT-10732,50,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,148.0,680.0,Discharged
+PAT-10733,51,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,138.0,805.0,Discharged
+PAT-10734,42,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,186.0,1040.0,Discharged
+PAT-10735,60,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-10736,65,Female,1,Resuscitation,Walk-in,Critical,False,False,8,135.0,680.0,Discharged
+PAT-10737,33,Male,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,209.0,2105.0,Admitted
+PAT-10738,24,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-10739,18,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10740,57,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,210.0,955.0,Discharged
+PAT-10741,54,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-10742,92,Female,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,193.0,1040.0,Discharged
+PAT-10743,49,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,226.0,955.0,Discharged
+PAT-10744,46,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,149.0,805.0,Discharged
+PAT-10745,52,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,141.0,805.0,Discharged
+PAT-10746,53,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,201.0,955.0,Discharged
+PAT-10747,44,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,132.0,805.0,Discharged
+PAT-10748,34,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,159.0,805.0,Discharged
+PAT-10749,48,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,215.0,1040.0,Discharged
+PAT-10750,47,Other,1,Resuscitation,Private Transport,Critical,False,False,8,131.0,1830.0,Admitted
+PAT-10751,47,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,213.0,955.0,Discharged
+PAT-10752,62,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,143.0,1955.0,Admitted
+PAT-10753,48,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,101.0,450.0,Discharged
+PAT-10754,24,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,217.0,1040.0,Discharged
+PAT-10755,37,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10756,44,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10757,49,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-10758,57,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,168.0,680.0,Discharged
+PAT-10759,49,Male,2,Emergent,Private Transport,Acute_Medical,False,False,8,168.0,680.0,Discharged
+PAT-10760,18,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,157.0,1830.0,Admitted
+PAT-10761,26,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,226.0,955.0,Discharged
+PAT-10762,58,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,173.0,805.0,Discharged
+PAT-10763,44,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10764,74,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,206.0,1040.0,Discharged
+PAT-10765,50,Female,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,198.0,1040.0,Discharged
+PAT-10766,41,Other,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,182.0,2105.0,Admitted
+PAT-10767,36,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,156.0,680.0,Discharged
+PAT-10768,42,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,115.0,1955.0,Admitted
+PAT-10769,50,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10770,48,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,140.0,805.0,Discharged
+PAT-10771,65,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10772,21,Male,1,Resuscitation,Ambulance,Critical,False,False,8,137.0,1830.0,Admitted
+PAT-10773,23,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,167.0,805.0,Discharged
+PAT-10774,43,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,88.0,450.0,Discharged
+PAT-10775,57,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,192.0,955.0,Discharged
+PAT-10776,61,Other,1,Resuscitation,Ambulance,Critical,False,False,8,112.0,1830.0,Admitted
+PAT-10777,37,Male,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,237.0,1190.0,Discharged
+PAT-10778,18,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,126.0,450.0,Discharged
+PAT-10779,38,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,140.0,450.0,Discharged
+PAT-10780,55,Male,1,Resuscitation,Walk-in,Critical,False,False,8,137.0,680.0,Discharged
+PAT-10781,47,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10782,58,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,170.0,680.0,Discharged
+PAT-10783,69,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-10784,45,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,176.0,1830.0,Admitted
+PAT-10785,40,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-10786,32,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-10787,23,Female,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,163.0,805.0,Discharged
+PAT-10788,18,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,193.0,2105.0,Admitted
+PAT-10789,35,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,128.0,450.0,Discharged
+PAT-10790,66,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10791,60,Female,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,237.0,1190.0,Discharged
+PAT-10792,39,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,153.0,680.0,Discharged
+PAT-10793,86,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10794,37,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,188.0,955.0,Discharged
+PAT-10795,71,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,158.0,1040.0,Discharged
+PAT-10796,76,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,146.0,805.0,Discharged
+PAT-10797,56,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,196.0,955.0,Discharged
+PAT-10798,35,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,169.0,1040.0,Discharged
+PAT-10799,41,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,247.0,1190.0,Discharged
+PAT-10800,51,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,203.0,680.0,Discharged
+PAT-10801,23,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10802,30,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,89.0,450.0,Discharged
+PAT-10803,29,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,102.0,450.0,Discharged
+PAT-10804,57,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,183.0,680.0,Discharged
+PAT-10805,69,Male,1,Resuscitation,Walk-in,Critical,False,False,8,115.0,1830.0,Admitted
+PAT-10806,60,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,86.0,450.0,Discharged
+PAT-10807,65,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,167.0,805.0,Discharged
+PAT-10808,34,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,203.0,680.0,Discharged
+PAT-10809,42,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,134.0,450.0,Discharged
+PAT-10810,43,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10811,56,Other,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10812,86,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,191.0,1040.0,Discharged
+PAT-10813,36,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10814,64,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,182.0,1040.0,Discharged
+PAT-10815,75,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-10816,57,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10817,41,Male,2,Emergent,Private Transport,Trauma_Imaging,True,False,8,144.0,1955.0,Admitted
+PAT-10818,32,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,86.0,450.0,Discharged
+PAT-10819,29,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,120.0,450.0,Discharged
+PAT-10820,18,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,179.0,1040.0,Discharged
+PAT-10821,44,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,173.0,2190.0,Admitted
+PAT-10822,43,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,185.0,680.0,Discharged
+PAT-10823,63,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,102.0,450.0,Discharged
+PAT-10824,37,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10825,44,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,174.0,1040.0,Discharged
+PAT-10826,53,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,131.0,805.0,Discharged
+PAT-10827,56,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,174.0,680.0,Discharged
+PAT-10828,61,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,228.0,1190.0,Discharged
+PAT-10829,51,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,186.0,680.0,Discharged
+PAT-10830,24,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10831,55,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,79.0,450.0,Discharged
+PAT-10832,36,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,199.0,955.0,Discharged
+PAT-10833,70,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-10834,48,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10835,52,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10836,92,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,171.0,680.0,Discharged
+PAT-10837,61,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,184.0,1040.0,Discharged
+PAT-10838,54,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,199.0,680.0,Discharged
+PAT-10839,45,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,225.0,1040.0,Discharged
+PAT-10840,25,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,148.0,1830.0,Admitted
+PAT-10841,44,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,255.0,1190.0,Discharged
+PAT-10842,32,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,121.0,805.0,Discharged
+PAT-10843,78,Female,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-10844,55,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10845,69,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-10846,37,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,184.0,955.0,Discharged
+PAT-10847,33,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,269.0,1190.0,Discharged
+PAT-10848,59,Other,2,Emergent,Ambulance,Acute_Medical,False,False,8,160.0,1830.0,Admitted
+PAT-10849,32,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,163.0,805.0,Discharged
+PAT-10850,40,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,128.0,805.0,Discharged
+PAT-10851,79,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10852,40,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,152.0,1040.0,Discharged
+PAT-10853,22,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,166.0,680.0,Discharged
+PAT-10854,18,Male,1,Resuscitation,Walk-in,Critical,False,False,8,146.0,680.0,Discharged
+PAT-10855,20,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,200.0,955.0,Discharged
+PAT-10856,70,Male,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,155.0,805.0,Discharged
+PAT-10857,38,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,141.0,805.0,Discharged
+PAT-10858,92,Female,1,Resuscitation,Walk-in,Critical,False,False,8,120.0,680.0,Discharged
+PAT-10859,75,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,133.0,805.0,Discharged
+PAT-10860,84,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,186.0,1830.0,Admitted
+PAT-10861,66,Male,2,Emergent,Ambulance,Acute_Medical,False,False,8,141.0,1830.0,Admitted
+PAT-10862,58,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-10863,33,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,174.0,680.0,Discharged
+PAT-10864,47,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10865,60,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10866,65,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,162.0,680.0,Discharged
+PAT-10867,27,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,86.0,450.0,Discharged
+PAT-10868,44,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,144.0,805.0,Discharged
+PAT-10869,46,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,216.0,1040.0,Discharged
+PAT-10870,45,Female,1,Resuscitation,Ambulance,Critical,False,False,8,117.0,1830.0,Admitted
+PAT-10871,29,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,131.0,450.0,Discharged
+PAT-10872,81,Male,2,Emergent,Private Transport,Acute_Medical,False,False,8,161.0,680.0,Discharged
+PAT-10873,43,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,208.0,1040.0,Discharged
+PAT-10874,30,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,171.0,955.0,Discharged
+PAT-10875,81,Female,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,211.0,1040.0,Discharged
+PAT-10876,75,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,85.0,450.0,Discharged
+PAT-10877,50,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-10878,18,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,158.0,2190.0,Admitted
+PAT-10879,39,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10880,19,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-10881,57,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,129.0,450.0,Discharged
+PAT-10882,38,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,212.0,1040.0,Discharged
+PAT-10883,47,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,162.0,955.0,Discharged
+PAT-10884,79,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,141.0,805.0,Discharged
+PAT-10885,37,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,115.0,450.0,Discharged
+PAT-10886,56,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,248.0,1190.0,Discharged
+PAT-10887,61,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,125.0,450.0,Discharged
+PAT-10888,70,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10889,46,Other,1,Resuscitation,Ambulance,Critical,False,False,8,131.0,680.0,Discharged
+PAT-10890,44,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,152.0,680.0,Discharged
+PAT-10891,43,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,100.0,450.0,Discharged
+PAT-10892,54,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,90.0,450.0,Discharged
+PAT-10893,74,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,242.0,955.0,Discharged
+PAT-10894,43,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,189.0,955.0,Discharged
+PAT-10895,18,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10896,63,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,172.0,955.0,Discharged
+PAT-10897,49,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,183.0,1040.0,Discharged
+PAT-10898,57,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,90.0,450.0,Discharged
+PAT-10899,19,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,163.0,680.0,Discharged
+PAT-10900,38,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-10901,62,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,209.0,1040.0,Discharged
+PAT-10902,25,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,169.0,680.0,Discharged
+PAT-10903,56,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,143.0,1955.0,Admitted
+PAT-10904,47,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-10905,34,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,162.0,805.0,Discharged
+PAT-10906,33,Female,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,200.0,955.0,Discharged
+PAT-10907,29,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-10908,49,Female,1,Resuscitation,Private Transport,Critical,False,False,8,147.0,1830.0,Admitted
+PAT-10909,51,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,168.0,805.0,Discharged
+PAT-10910,41,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,True,13,222.0,2340.0,Admitted
+PAT-10911,28,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-10912,18,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,184.0,680.0,Discharged
+PAT-10913,55,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,178.0,2190.0,Admitted
+PAT-10914,64,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-10915,59,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,267.0,1190.0,Discharged
+PAT-10916,85,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,254.0,1190.0,Discharged
+PAT-10917,44,Other,2,Emergent,Private Transport,Acute_Medical,False,False,8,158.0,1830.0,Admitted
+PAT-10918,72,Male,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,126.0,805.0,Discharged
+PAT-10919,36,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-10920,33,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-10921,50,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,134.0,450.0,Discharged
+PAT-10922,77,Male,1,Resuscitation,Walk-in,Critical,False,False,8,145.0,1830.0,Admitted
+PAT-10923,42,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,207.0,1040.0,Discharged
+PAT-10924,19,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,87.0,450.0,Discharged
+PAT-10925,63,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-10926,46,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,207.0,1040.0,Discharged
+PAT-10927,53,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,258.0,1190.0,Discharged
+PAT-10928,34,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-10929,50,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,168.0,680.0,Discharged
+PAT-10930,22,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,88.0,450.0,Discharged
+PAT-10931,81,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,127.0,1955.0,Admitted
+PAT-10932,67,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-10933,49,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,176.0,1040.0,Discharged
+PAT-10934,63,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,151.0,680.0,Discharged
+PAT-10935,36,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,202.0,1040.0,Discharged
+PAT-10936,66,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,84.0,450.0,Discharged
+PAT-10937,41,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,129.0,1955.0,Admitted
+PAT-10938,40,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,133.0,1830.0,Admitted
+PAT-10939,30,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,193.0,1040.0,Discharged
+PAT-10940,55,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,203.0,680.0,Discharged
+PAT-10941,48,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,213.0,955.0,Discharged
+PAT-10942,73,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,134.0,450.0,Discharged
+PAT-10943,28,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10944,55,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,248.0,1190.0,Discharged
+PAT-10945,69,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,150.0,805.0,Discharged
+PAT-10946,92,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,211.0,2190.0,Admitted
+PAT-10947,51,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10948,41,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,202.0,680.0,Discharged
+PAT-10949,51,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10950,71,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,132.0,450.0,Discharged
+PAT-10951,71,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-10952,45,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,129.0,680.0,Discharged
+PAT-10953,71,Male,1,Resuscitation,Ambulance,Critical,False,False,8,113.0,1830.0,Admitted
+PAT-10954,47,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,262.0,1190.0,Discharged
+PAT-10955,63,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,127.0,680.0,Discharged
+PAT-10956,57,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,162.0,680.0,Discharged
+PAT-10957,40,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,119.0,450.0,Discharged
+PAT-10958,31,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,153.0,680.0,Discharged
+PAT-10959,69,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,185.0,680.0,Discharged
+PAT-10960,75,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,190.0,680.0,Discharged
+PAT-10961,55,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,149.0,680.0,Discharged
+PAT-10962,47,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,203.0,1040.0,Discharged
+PAT-10963,26,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,189.0,680.0,Discharged
+PAT-10964,69,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,146.0,450.0,Discharged
+PAT-10965,53,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,79.0,450.0,Discharged
+PAT-10966,43,Female,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,199.0,1040.0,Discharged
+PAT-10967,63,Male,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,188.0,2190.0,Admitted
+PAT-10968,23,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,215.0,955.0,Discharged
+PAT-10969,29,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-10970,35,Female,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,127.0,805.0,Discharged
+PAT-10971,57,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-10972,51,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-10973,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,118.0,450.0,Discharged
+PAT-10974,67,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,205.0,680.0,Discharged
+PAT-10975,60,Other,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,209.0,1190.0,Discharged
+PAT-10976,82,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-10977,67,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,182.0,680.0,Discharged
+PAT-10978,45,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,157.0,805.0,Discharged
+PAT-10979,38,Male,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,174.0,1040.0,Discharged
+PAT-10980,46,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,239.0,1190.0,Discharged
+PAT-10981,60,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-10982,40,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-10983,61,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,204.0,1040.0,Discharged
+PAT-10984,59,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,105.0,450.0,Discharged
+PAT-10985,31,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,87.0,450.0,Discharged
+PAT-10986,67,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,237.0,1190.0,Discharged
+PAT-10987,54,Male,1,Resuscitation,Walk-in,Critical,False,False,8,152.0,680.0,Discharged
+PAT-10988,81,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,154.0,680.0,Discharged
+PAT-10989,47,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-10990,42,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,84.0,450.0,Discharged
+PAT-10991,29,Female,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,156.0,1040.0,Discharged
+PAT-10992,28,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-10993,65,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,88.0,450.0,Discharged
+PAT-10994,78,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,156.0,805.0,Discharged
+PAT-10995,46,Male,2,Emergent,Ambulance,Acute_Medical,False,False,8,129.0,1830.0,Admitted
+PAT-10996,44,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,146.0,805.0,Discharged
+PAT-10997,49,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,141.0,680.0,Discharged
+PAT-10998,68,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,200.0,680.0,Discharged
+PAT-10999,31,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,185.0,680.0,Discharged
+PAT-11000,52,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,81.0,450.0,Discharged
+PAT-11001,65,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-11002,57,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,108.0,805.0,Discharged
+PAT-11003,18,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,True,13,245.0,1190.0,Discharged
+PAT-11004,60,Other,1,Resuscitation,Walk-in,Critical,False,False,8,149.0,1830.0,Admitted
+PAT-11005,57,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,108.0,1955.0,Admitted
+PAT-11006,72,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,139.0,450.0,Discharged
+PAT-11007,77,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,161.0,805.0,Discharged
+PAT-11008,71,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,91.0,450.0,Discharged
+PAT-11009,49,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,145.0,805.0,Discharged
+PAT-11010,19,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,236.0,1190.0,Discharged
+PAT-11011,87,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,227.0,955.0,Discharged
+PAT-11012,44,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,175.0,680.0,Discharged
+PAT-11013,48,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,198.0,955.0,Discharged
+PAT-11014,78,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,92.0,450.0,Discharged
+PAT-11015,34,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-11016,24,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-11017,40,Other,2,Emergent,Walk-in,Trauma_Imaging,True,True,11,187.0,2190.0,Admitted
+PAT-11018,35,Male,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,172.0,1040.0,Discharged
+PAT-11019,22,Other,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,110.0,805.0,Discharged
+PAT-11020,46,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,117.0,1955.0,Admitted
+PAT-11021,49,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,133.0,450.0,Discharged
+PAT-11022,21,Male,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,209.0,2105.0,Admitted
+PAT-11023,42,Female,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,200.0,1040.0,Discharged
+PAT-11024,34,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,144.0,1830.0,Admitted
+PAT-11025,18,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,152.0,680.0,Discharged
+PAT-11026,50,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-11027,51,Female,1,Resuscitation,Walk-in,Critical,False,False,8,146.0,680.0,Discharged
+PAT-11028,34,Male,2,Emergent,Private Transport,Trauma_Imaging,True,True,11,159.0,1040.0,Discharged
+PAT-11029,67,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,100.0,450.0,Discharged
+PAT-11030,48,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-11031,35,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,179.0,955.0,Discharged
+PAT-11032,20,Male,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,177.0,1040.0,Discharged
+PAT-11033,52,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,125.0,450.0,Discharged
+PAT-11034,57,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,156.0,805.0,Discharged
+PAT-11035,39,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,133.0,805.0,Discharged
+PAT-11036,50,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,104.0,450.0,Discharged
+PAT-11037,77,Other,3,Urgent,Private Transport,Trauma_Imaging,True,False,8,136.0,805.0,Discharged
+PAT-11038,64,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,221.0,1040.0,Discharged
+PAT-11039,18,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-11040,35,Female,3,Urgent,Ambulance,Combined_Diagnostic,True,False,10,163.0,955.0,Discharged
+PAT-11041,45,Other,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,118.0,805.0,Discharged
+PAT-11042,49,Male,1,Resuscitation,Private Transport,Critical,False,False,8,143.0,1830.0,Admitted
+PAT-11043,51,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,False,10,198.0,955.0,Discharged
+PAT-11044,55,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,126.0,805.0,Discharged
+PAT-11045,46,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,124.0,805.0,Discharged
+PAT-11046,48,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,129.0,450.0,Discharged
+PAT-11047,65,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,129.0,1955.0,Admitted
+PAT-11048,53,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,190.0,1040.0,Discharged
+PAT-11049,27,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-11050,49,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,178.0,680.0,Discharged
+PAT-11051,45,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,180.0,2105.0,Admitted
+PAT-11052,18,Male,1,Resuscitation,Ambulance,Critical,False,False,8,115.0,680.0,Discharged
+PAT-11053,50,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,189.0,1040.0,Discharged
+PAT-11054,29,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,143.0,680.0,Discharged
+PAT-11055,65,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,123.0,450.0,Discharged
+PAT-11056,55,Female,1,Resuscitation,Ambulance,Critical,False,False,8,149.0,1830.0,Admitted
+PAT-11057,26,Male,3,Urgent,Private Transport,Combined_Diagnostic,True,False,10,201.0,955.0,Discharged
+PAT-11058,64,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,153.0,680.0,Discharged
+PAT-11059,73,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,199.0,680.0,Discharged
+PAT-11060,43,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,173.0,680.0,Discharged
+PAT-11061,45,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,170.0,680.0,Discharged
+PAT-11062,62,Other,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,173.0,2105.0,Admitted
+PAT-11063,71,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,130.0,450.0,Discharged
+PAT-11064,18,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,157.0,955.0,Discharged
+PAT-11065,28,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-11066,40,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-11067,42,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-11068,62,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,130.0,1955.0,Admitted
+PAT-11069,71,Female,1,Resuscitation,Walk-in,Critical,False,False,8,132.0,1830.0,Admitted
+PAT-11070,73,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,99.0,450.0,Discharged
+PAT-11071,18,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,184.0,1040.0,Discharged
+PAT-11072,33,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,170.0,1040.0,Discharged
+PAT-11073,25,Female,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,114.0,450.0,Discharged
+PAT-11074,37,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,140.0,805.0,Discharged
+PAT-11075,33,Female,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,203.0,1040.0,Discharged
+PAT-11076,55,Male,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-11077,57,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,201.0,680.0,Discharged
+PAT-11078,48,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,134.0,450.0,Discharged
+PAT-11079,46,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,84.0,450.0,Discharged
+PAT-11080,41,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,168.0,680.0,Discharged
+PAT-11081,43,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,85.0,450.0,Discharged
+PAT-11082,76,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,188.0,1040.0,Discharged
+PAT-11083,60,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,142.0,680.0,Discharged
+PAT-11084,41,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,136.0,805.0,Discharged
+PAT-11085,46,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,119.0,805.0,Discharged
+PAT-11086,56,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,165.0,805.0,Discharged
+PAT-11087,26,Other,1,Resuscitation,Walk-in,Critical,False,False,8,146.0,1830.0,Admitted
+PAT-11088,50,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,124.0,450.0,Discharged
+PAT-11089,59,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-11090,57,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,269.0,1190.0,Discharged
+PAT-11091,33,Other,1,Resuscitation,Walk-in,Critical,False,False,8,169.0,1830.0,Admitted
+PAT-11092,36,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,258.0,1190.0,Discharged
+PAT-11093,18,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,167.0,680.0,Discharged
+PAT-11094,61,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,125.0,805.0,Discharged
+PAT-11095,85,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-11096,31,Other,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,106.0,450.0,Discharged
+PAT-11097,67,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,175.0,680.0,Discharged
+PAT-11098,83,Other,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,281.0,1190.0,Discharged
+PAT-11099,39,Female,2,Emergent,Private Transport,Acute_Medical,False,False,8,120.0,1830.0,Admitted
+PAT-11100,46,Male,1,Resuscitation,Walk-in,Critical,False,False,8,111.0,1830.0,Admitted
+PAT-11101,52,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,123.0,805.0,Discharged
+PAT-11102,56,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-11103,53,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,185.0,680.0,Discharged
+PAT-11104,40,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,81.0,450.0,Discharged
+PAT-11105,59,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-11106,41,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,172.0,1040.0,Discharged
+PAT-11107,54,Female,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,116.0,805.0,Discharged
+PAT-11108,47,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,241.0,2340.0,Admitted
+PAT-11109,18,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,193.0,1040.0,Discharged
+PAT-11110,70,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,174.0,680.0,Discharged
+PAT-11111,37,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-11112,72,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,172.0,680.0,Discharged
+PAT-11113,67,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,188.0,680.0,Discharged
+PAT-11114,52,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,78.0,450.0,Discharged
+PAT-11115,57,Male,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,268.0,1190.0,Discharged
+PAT-11116,59,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,255.0,1190.0,Discharged
+PAT-11117,44,Female,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-11118,45,Male,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,155.0,805.0,Discharged
+PAT-11119,58,Other,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,96.0,450.0,Discharged
+PAT-11120,18,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,158.0,680.0,Discharged
+PAT-11121,47,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,196.0,1040.0,Discharged
+PAT-11122,41,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,127.0,450.0,Discharged
+PAT-11123,34,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-11124,55,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,False,10,174.0,2105.0,Admitted
+PAT-11125,36,Female,3,Urgent,Private Transport,Acute_Medical,False,False,8,161.0,680.0,Discharged
+PAT-11126,63,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,134.0,805.0,Discharged
+PAT-11127,65,Male,1,Resuscitation,Ambulance,Critical,False,False,8,140.0,1830.0,Admitted
+PAT-11128,57,Other,2,Emergent,Private Transport,Combined_Diagnostic,True,True,13,220.0,2340.0,Admitted
+PAT-11129,61,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,67.0,450.0,Discharged
+PAT-11130,57,Female,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,132.0,450.0,Discharged
+PAT-11131,62,Male,2,Emergent,Ambulance,Combined_Diagnostic,True,False,10,151.0,2105.0,Admitted
+PAT-11132,61,Male,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,93.0,450.0,Discharged
+PAT-11133,54,Other,2,Emergent,Walk-in,Acute_Medical,False,False,8,170.0,680.0,Discharged
+PAT-11134,67,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,98.0,450.0,Discharged
+PAT-11135,45,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,194.0,680.0,Discharged
+PAT-11136,34,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,137.0,805.0,Discharged
+PAT-11137,33,Male,2,Emergent,Private Transport,Acute_Medical,False,False,8,164.0,680.0,Discharged
+PAT-11138,42,Other,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,131.0,1955.0,Admitted
+PAT-11139,18,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-11140,51,Male,1,Resuscitation,Ambulance,Critical,False,False,8,120.0,1830.0,Admitted
+PAT-11141,59,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,191.0,680.0,Discharged
+PAT-11142,64,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-11143,19,Female,1,Resuscitation,Walk-in,Critical,False,False,8,143.0,1830.0,Admitted
+PAT-11144,34,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,113.0,450.0,Discharged
+PAT-11145,62,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-11146,44,Female,1,Resuscitation,Ambulance,Critical,False,False,8,133.0,1830.0,Admitted
+PAT-11147,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-11148,25,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,135.0,805.0,Discharged
+PAT-11149,72,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,197.0,680.0,Discharged
+PAT-11150,24,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,148.0,680.0,Discharged
+PAT-11151,18,Male,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,162.0,805.0,Discharged
+PAT-11152,51,Other,2,Emergent,Ambulance,Trauma_Imaging,True,False,8,123.0,1955.0,Admitted
+PAT-11153,51,Female,2,Emergent,Walk-in,Combined_Diagnostic,True,False,10,173.0,2105.0,Admitted
+PAT-11154,39,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,110.0,450.0,Discharged
+PAT-11155,56,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,168.0,2105.0,Admitted
+PAT-11156,57,Male,2,Emergent,Walk-in,Acute_Medical,False,False,8,160.0,1830.0,Admitted
+PAT-11157,55,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,143.0,1830.0,Admitted
+PAT-11158,38,Female,2,Emergent,Private Transport,Combined_Diagnostic,True,False,10,192.0,955.0,Discharged
+PAT-11159,35,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,94.0,450.0,Discharged
+PAT-11160,40,Female,3,Urgent,Walk-in,Acute_Medical,False,False,8,155.0,680.0,Discharged
+PAT-11161,33,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,157.0,680.0,Discharged
+PAT-11162,68,Male,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-11163,42,Female,3,Urgent,Ambulance,Trauma_Imaging,True,False,8,162.0,805.0,Discharged
+PAT-11164,50,Male,5,Non-Urgent,Ambulance,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-11165,62,Other,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,210.0,1040.0,Discharged
+PAT-11166,32,Other,5,Non-Urgent,Walk-in,Low_Acuity,False,False,5,116.0,450.0,Discharged
+PAT-11167,23,Female,4,Less Urgent,Ambulance,Low_Acuity,False,False,5,89.0,450.0,Discharged
+PAT-11168,33,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,95.0,450.0,Discharged
+PAT-11169,52,Other,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,136.0,805.0,Discharged
+PAT-11170,51,Other,3,Urgent,Private Transport,Acute_Medical,False,False,8,177.0,680.0,Discharged
+PAT-11171,55,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,83.0,450.0,Discharged
+PAT-11172,46,Other,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,179.0,1040.0,Discharged
+PAT-11173,18,Male,3,Urgent,Private Transport,Trauma_Imaging,True,True,11,206.0,1040.0,Discharged
+PAT-11174,45,Female,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,188.0,1040.0,Discharged
+PAT-11175,65,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,201.0,1040.0,Discharged
+PAT-11176,70,Female,3,Urgent,Walk-in,Trauma_Imaging,True,True,11,182.0,1040.0,Discharged
+PAT-11177,49,Other,2,Emergent,Walk-in,Combined_Diagnostic,True,True,13,228.0,1190.0,Discharged
+PAT-11178,51,Female,3,Urgent,Walk-in,Combined_Diagnostic,True,True,13,261.0,1190.0,Discharged
+PAT-11179,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,109.0,450.0,Discharged
+PAT-11180,69,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,159.0,680.0,Discharged
+PAT-11181,48,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,103.0,450.0,Discharged
+PAT-11182,58,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,137.0,450.0,Discharged
+PAT-11183,38,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,174.0,680.0,Discharged
+PAT-11184,26,Female,2,Emergent,Walk-in,Acute_Medical,False,False,8,150.0,680.0,Discharged
+PAT-11185,39,Male,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,107.0,450.0,Discharged
+PAT-11186,74,Female,2,Emergent,Ambulance,Acute_Medical,False,False,8,135.0,680.0,Discharged
+PAT-11187,59,Other,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,112.0,450.0,Discharged
+PAT-11188,27,Female,4,Less Urgent,Walk-in,Low_Acuity,False,False,5,97.0,450.0,Discharged
+PAT-11189,60,Male,3,Urgent,Ambulance,Trauma_Imaging,True,True,11,187.0,1040.0,Discharged
+PAT-11190,28,Male,5,Non-Urgent,Private Transport,Low_Acuity,False,False,5,122.0,450.0,Discharged
+PAT-11191,54,Other,3,Urgent,Walk-in,Acute_Medical,False,False,8,166.0,680.0,Discharged
+PAT-11192,31,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,154.0,680.0,Discharged
+PAT-11193,26,Other,3,Urgent,Private Transport,Combined_Diagnostic,True,True,13,261.0,1190.0,Discharged
+PAT-11194,77,Male,3,Urgent,Ambulance,Acute_Medical,False,False,8,140.0,680.0,Discharged
+PAT-11195,42,Male,2,Emergent,Walk-in,Trauma_Imaging,True,False,8,147.0,1955.0,Admitted
+PAT-11196,58,Other,3,Urgent,Ambulance,Acute_Medical,False,False,8,193.0,680.0,Discharged
+PAT-11197,48,Female,3,Urgent,Ambulance,Acute_Medical,False,False,8,180.0,680.0,Discharged
+PAT-11198,29,Other,4,Less Urgent,Private Transport,Low_Acuity,False,False,5,111.0,450.0,Discharged
+PAT-11199,43,Female,3,Urgent,Walk-in,Trauma_Imaging,True,False,8,158.0,805.0,Discharged
+PAT-11200,30,Male,3,Urgent,Walk-in,Acute_Medical,False,False,8,185.0,680.0,Discharged
