@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareFlow — Clinical Pathway Process Mining & Bottleneck Analytics</title>
+  <meta name="description" content="Enterprise clinical process mining dashboard by Infotact Solutions discovering operational bottlenecks in Emergency Department patient flows using PM4Py and dbt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="brand-section">
+      <div class="brand-logo">
+        <i class="fa-solid fa-heart-pulse logo-icon"></i>
+      </div>
+      <div>
+        <div class="brand-title-wrap">
+          <h1 class="brand-name">CareFlow</h1>
+          <span class="badge-tag">INFOTACT SOLUTIONS • VOL. II</span>
+        </div>
+        <p class="brand-subtitle">Clinical Pathway Process Mining & Emergency Room Bottleneck Detection</p>
+      </div>
+    </div>
+    
+    <div class="header-actions">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>EHR Stream Ingested (PM4Py v2.7)</span>
+      </div>
+      <button id="themeToggleBtn" class="btn btn-outline" title="Toggle Dark/Light Mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button id="resetViewBtn" class="btn btn-primary">
+        <i class="fa-solid fa-arrows-rotate"></i> Reset Filters
+      </button>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="dashboard-container">
+    
+    <!-- Top Executive Metric Strip -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-icon blue"><i class="fa-solid fa-users"></i></div>
+        <div class="metric-content">
+          <span class="metric-label">Total Patient Cases</span>
+          <span class="metric-value" id="kpiTotalCases">1,200</span>
+          <span class="metric-subtext"><i class="fa-solid fa-calendar-check"></i> 30-Day Emergency Dept Sample</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon purple"><i class="fa-solid fa-timeline"></i></div>
+        <div class="metric-content">
+          <span class="metric-label">Total Clinical Events</span>
+          <span class="metric-value" id="kpiTotalEvents">9,448</span>
+          <span class="metric-subtext"><i class="fa-solid fa-microchip"></i> 14 Unique Clinical Activities</span>
+        </div>
+      </div>
+
+      <div class="metric-card warning-card">
+        <div class="metric-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+        <div class="metric-content">
+          <span class="metric-label">Radiology Loop-Back Rate</span>
+          <span class="metric-value highlight-red" id="kpiLoopbackRate">42.2%</span>
+          <span class="metric-subtext red-text"><i class="fa-solid fa-file-circle-xmark"></i> 210 Cases Sent Back to Triage</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-icon orange"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <div class="metric-content">
+          <span class="metric-label">Loop-Back Delay Penalty</span>
+          <span class="metric-value" id="kpiDelayPenalty">+66.6 min</span>
+          <span class="metric-subtext"><i class="fa-solid fa-hourglass-half"></i> Avg Stay: 207m vs 140m Baseline</span>
+        </div>
+      </div>
+
+      <div class="metric-card success-card">
+        <div class="metric-icon green"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="metric-content">
+          <span class="metric-label">Model Fitness (TBR)</span>
+          <span class="metric-value highlight-green" id="kpiFitness">100.0%</span>
+          <span class="metric-subtext"><i class="fa-solid fa-diagram-project"></i> Inductive Miner Discovery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Workspace Split: Left Graph Visualizer, Right Panels -->
+    <div class="workspace-grid">
+      
+      <!-- Center: Process Mining Directed Graph Visualizer -->
+      <section class="panel visualizer-panel">
+        <div class="panel-header">
+          <div class="panel-title-group">
+            <h2><i class="fa-solid fa-diagram-project"></i> "As-Is" Clinical Pathway Process Map (Directly-Follows Graph)</h2>
+            <span class="panel-hint">Interactive force-directed graph. Drag nodes, scroll to zoom, click edges to inspect latency.</span>
+          </div>
+
+          <div class="view-controls">
+            <div class="button-toggle-group">
+              <button id="viewAllBtn" class="toggle-btn active">Full Graph</button>
+              <button id="viewBottleneckBtn" class="toggle-btn"><i class="fa-solid fa-fire text-amber"></i> Bottleneck Only</button>
+              <button id="viewHappyPathBtn" class="toggle-btn"><i class="fa-solid fa-check text-green"></i> Ideal Pathway</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="visualizer-filter-bar">
+          <div class="filter-item">
+            <label for="filterAcuity"><i class="fa-solid fa-filter"></i> Triage Acuity:</label>
+            <select id="filterAcuity" class="custom-select">
+              <option value="ALL">All Acuities (ESI 1-5)</option>
+              <option value="ESI-1">ESI 1 - Resuscitation (Immediate)</option>
+              <option value="ESI-2">ESI 2 - Emergent</option>
+              <option value="ESI-3">ESI 3 - Urgent</option>
+              <option value="ESI-4">ESI 4 - Less Urgent</option>
+              <option value="ESI-5">ESI 5 - Non-Urgent</option>
+            </select>
+          </div>
+
+          <div class="filter-item">
+            <label for="filterLoopback"><i class="fa-solid fa-arrows-spin"></i> Pathway Status:</label>
+            <select id="filterLoopback" class="custom-select">
+              <option value="ALL">All Traces</option>
+              <option value="LOOPBACK">Loop-Back Affected (42.2%)</option>
+              <option value="STANDARD">Standard Linear Traces</option>
+            </select>
+          </div>
+
+          <div class="graph-legend">
+            <span class="legend-item"><span class="legend-dot normal"></span> Standard Flow</span>
+            <span class="legend-item"><span class="legend-dot loopback"></span> Missing Paperwork Loopback</span>
+            <span class="legend-item"><span class="legend-dot endpoint"></span> Final Disposition</span>
+          </div>
+        </div>
+
+        <!-- The Vis.js canvas container -->
+        <div id="processNetworkCanvas" class="network-canvas-container">
+          <div class="canvas-loading-spinner" id="canvasSpinner">
+            <i class="fa-solid fa-spinner fa-spin"></i> Computing Process Layout...
+          </div>
+        </div>
+
+        <!-- Graph Alert Banner -->
+        <div class="bottleneck-alert-box">
+          <div class="alert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div class="alert-content">
+            <h4>Root Cause Discovered: Missing Radiology Intake Form 4B</h4>
+            <p>
+              42.2% of patients receiving an X-Ray are rejected at the imaging checkout desk due to incomplete radiation consent documentation, forcing them back to <strong>Emergency Triage</strong> and causing an average <strong>66.6 minute total delay</strong> per case.
+            </p>
+          </div>
+          <button id="showSolutionModalBtn" class="btn btn-sm btn-action">View ROI Impact</button>
+        </div>
+      </section>
+
+      <!-- Right Column: Tabs for Variants, Bottleneck Ranking, and ROI Simulator -->
+      <aside class="panel side-panel">
+        <div class="tabs-nav">
+          <button class="tab-btn active" data-tab="tabVariants"><i class="fa-solid fa-route"></i> Variants</button>
+          <button class="tab-btn" data-tab="tabBottlenecks"><i class="fa-solid fa-chart-column"></i> Bottlenecks</button>
+          <button class="tab-btn" data-tab="tabROI"><i class="fa-solid fa-calculator"></i> ROI Calculator</button>
+          <button class="tab-btn" data-tab="tabTrace"><i class="fa-solid fa-magnifying-glass"></i> Trace Search</button>
+        </div>
+
+        <div class="tab-content-wrapper">
+          <!-- Tab 1: Process Variants -->
+          <div id="tabVariants" class="tab-pane active">
+            <div class="tab-intro">
+              <h3>Top Patient Flow Archetypes</h3>
+              <p>Top execution sequences discovered by PM4Py Inductive Miner.</p>
+            </div>
+            <div class="variants-list" id="variantsListContainer">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Bottlenecks & Transitions -->
+          <div id="tabBottlenecks" class="tab-pane">
+            <div class="tab-intro">
+              <h3>Transition Latency Ranking</h3>
+              <p>Inter-activity dwell times computed from dbt window models.</p>
+            </div>
+            <div class="bottleneck-table-wrap">
+              <table class="data-table" id="bottleneckTable">
+                <thead>
+                  <tr>
+                    <th>Transition (From → To)</th>
+                    <th>Count</th>
+                    <th>Avg Wait</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="bottleneckTableBody">
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tab 3: Executive ROI & Intervention Simulator -->
+          <div id="tabROI" class="tab-pane">
+            <div class="tab-intro">
+              <h3>Operational ROI & Impact Calculator</h3>
+              <p>Simulate clinical gains from digitizing intake Form 4B at Registration.</p>
+            </div>
+
+            <div class="roi-simulator-card">
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span>Intake Form Digital Compliance</span>
+                  <strong id="sliderComplianceVal">100% (Complete Fix)</strong>
+                </div>
+                <input type="range" id="sliderCompliance" min="0" max="100" value="100" class="custom-range">
+              </div>
+
+              <div class="roi-results-grid">
+                <div class="roi-stat-box">
+                  <span class="roi-title">Wait Time Saved / Patient</span>
+                  <span class="roi-number" id="roiWaitSaved">66.6 mins</span>
+                </div>
+                <div class="roi-stat-box">
+                  <span class="roi-title">Annual Hours Recovered</span>
+                  <span class="roi-number text-green" id="roiHoursRecovered">2,797 hrs</span>
+                </div>
+                <div class="roi-stat-box">
+                  <span class="roi-title">Avoided Rework Cost</span>
+                  <span class="roi-number text-blue" id="roiCostAvoided">$59,220 /yr</span>
+                </div>
+                <div class="roi-stat-box">
+                  <span class="roi-title">ED Bed Capacity Boost</span>
+                  <span class="roi-number text-purple" id="roiBedBoost">+14.2%</span>
+                </div>
+              </div>
+
+              <div class="recommendation-callout">
+                <div class="callout-badge"><i class="fa-solid fa-lightbulb"></i> Recommended Administrative Policy</div>
+                <p>
+                  Embed <strong>Form 4B (Radiation Safety & Imaging Consent)</strong> into the initial Electronic Triage checklist rather than deferring it until the patient arrives at the Radiology suite.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Patient Trace Inspector -->
+          <div id="tabTrace" class="tab-pane">
+            <div class="tab-intro">
+              <h3>Patient Trace Audit Inspector</h3>
+              <p>Inspect the chronological clinical trajectory of any individual patient.</p>
+            </div>
+            
+            <div class="search-box-wrap">
+              <input type="text" id="traceSearchInput" placeholder="Enter Case ID (e.g. PAT-10004)..." class="custom-input">
+              <button id="traceSearchBtn" class="btn btn-sm btn-primary">Inspect</button>
+            </div>
+
+            <div id="patientDetailsCard" class="patient-card">
+              <div class="patient-card-header">
+                <span class="patient-id" id="traceCaseId">PAT-10004</span>
+                <span class="badge" id="traceBadge">ESI 3 • Urgent</span>
+              </div>
+              <div class="patient-card-stats">
+                <div><span>Total Stay:</span> <strong id="traceTotalTime">218.4 mins</strong></div>
+                <div><span>Radiology:</span> <strong id="traceRad">Yes</strong></div>
+                <div><span>Loopback:</span> <strong id="traceLoopback" class="text-red">YES (Delayed)</strong></div>
+              </div>
+              <h4 class="timeline-title">Event Sequence Audit:</h4>
+              <ul class="timeline-list" id="traceTimelineList">
+                <!-- Timeline items -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- Bottom Analytics Charts -->
+    <section class="bottom-analytics-grid">
+      <div class="panel chart-panel">
+        <div class="panel-header">
+          <h3><i class="fa-solid fa-chart-pie"></i> Patient Case Distribution by Archetype</h3>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="archetypeChart"></canvas>
+        </div>
+      </div>
+
+      <div class="panel chart-panel">
+        <div class="panel-header">
+          <h3><i class="fa-solid fa-chart-bar"></i> Average ED Length of Stay (Standard vs Loop-Back)</h3>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="stayComparisonChart"></canvas>
+        </div>
+      </div>
+
+      <div class="panel chart-panel">
+        <div class="panel-header">
+          <h3><i class="fa-solid fa-shield-halved"></i> Conformance Checking (Mandated vs Actual Flow)</h3>
+        </div>
+        <div class="conformance-widget">
+          <div class="conformance-ring-wrap">
+            <div class="conformance-score">100%</div>
+            <div class="conformance-label">Fitness Score</div>
+          </div>
+          <div class="conformance-details">
+            <div class="detail-row">
+              <span>Normative Ideal Traces:</span>
+              <strong>82.5%</strong>
+            </div>
+            <div class="detail-row text-red">
+              <span>Deviant Loopback Traces:</span>
+              <strong>17.5%</strong>
+            </div>
+            <div class="detail-row">
+              <span>Token Replay Precision:</span>
+              <strong>92.8%</strong>
+            </div>
+            <div class="detail-row">
+              <span>Generalization Metric:</span>
+              <strong>94.6%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Node Detail Modal -->
+  <div id="nodeDetailModal" class="modal-backdrop">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalNodeTitle"><i class="fa-solid fa-circle-nodes"></i> Activity Details</h3>
+        <button id="modalCloseBtn" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalNodeBody">
+        <!-- Content inserted dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <div class="footer-left">
+      <span>CareFlow Clinical Process Mining System • Infotact Solutions Advanced Data Analytics Volume II</span>
+    </div>
+    <div class="footer-right">
+      <span>Author: <strong>Annagiri Goutham</strong> (Data Associate L1 Intern) • Assigned: Oct 2026</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
