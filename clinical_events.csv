@@ -1,0 +1,25 @@
+
+case_id,activity,timestamp,department
+P001,Registration,2026-10-20 09:00:00,Reception
+P001,Consultation,2026-10-20 09:20:00,OPD
+P001,Lab Test,2026-10-20 10:00:00,Laboratory
+P001,Treatment,2026-10-20 11:00:00,Treatment
+P001,Discharge,2026-10-20 11:30:00,Reception
+P002,Registration,2026-10-20 09:10:00,Reception
+P002,Consultation,2026-10-20 10:00:00,OPD
+P002,Lab Test,2026-10-20 10:45:00,Laboratory
+P002,Treatment,2026-10-20 12:00:00,Treatment
+P002,Discharge,2026-10-20 12:20:00,Reception
+P003,Registration,2026-10-20 10:00:00,Reception
+P003,Consultation,2026-10-20 10:15:00,OPD
+P003,Treatment,2026-10-20 10:50:00,Treatment
+P003,Discharge,2026-10-20 11:10:00,Reception
+P004,Registration,2026-10-20 11:00:00,Reception
+P004,Consultation,2026-10-20 11:40:00,OPD
+P004,Lab Test,2026-10-20 12:10:00,Laboratory
+P004,Treatment,2026-10-20 13:20:00,Treatment
+P004,Discharge,2026-10-20 13:45:00,Reception
+P005,Registration,2026-10-20 12:00:00,Reception
+P005,Consultation,2026-10-20 12:25:00,OPD
+P005,Treatment,2026-10-20 13:00:00,Treatment
+P005,Discharge,2026-10-20 13:15:00,Reception
