@@ -331,7 +331,7 @@ body {
 .workspace-grid {
   display: grid;
   grid-template-columns: 2.2fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
   min-height: 640px;
 }
 
@@ -463,10 +463,12 @@ body {
 
 /* Canvas Container */
 .network-canvas-container {
-  flex: 1;
-  min-height: 480px;
-  background-color: #0d1322;
-  position: relative;
+    position: relative;
+    height: 480px;
+    min-height: 480px;
+    max-height: 480px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .canvas-loading-spinner {
@@ -856,12 +858,15 @@ body {
 /* Bottom Analytics Grid */
 .bottom-analytics-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr 1fr;
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
 }
 
 .chart-panel {
   min-height: 280px;
+  height: fit-content;
+  align-self: start;
 }
 
 .chart-panel .panel-header h3 {
@@ -873,9 +878,10 @@ body {
 }
 
 .chart-canvas-wrap {
-  padding: 1rem;
-  flex: 1;
+  padding: 0.75rem;
+  flex: 0 0 auto;
   position: relative;
+  min-height: 0;
 }
 
 /* Conformance Ring Widget */

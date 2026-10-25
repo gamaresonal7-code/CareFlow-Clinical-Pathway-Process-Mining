@@ -175,8 +175,8 @@ function initNetworkGraph() {
     interaction: {
       hover: true,
       tooltipDelay: 100,
-      zoomView: true,
-      dragView: true
+      zoomView: false,
+      dragView: false
     }
   };
 
@@ -212,7 +212,7 @@ function formatNodeLabel(title, count) {
   });
   if (currentLine.trim()) lines.push(currentLine.trim());
 
-  return lines.join("\n") + `\n[${count:,} cases]`;
+return lines.join("\n") + `\n[${count.toLocaleString("en-US")} cases]`;
 }
 
 function renderVariantsList() {
@@ -537,7 +537,7 @@ function showNodeModal(node) {
   document.getElementById("modalNodeBody").innerHTML = `
     <div style="display: flex; flex-direction: column; gap: 0.75rem;">
       <p><strong>Department:</strong> ${node.department}</p>
-      <p><strong>Total Executions:</strong> ${node.execution_count:,} patient events</p>
+<p><strong>Total Executions:</strong> ${node.execution_count.toLocaleString("en-US")} patient events</p>
       <p><strong>Average Activity Cost:</strong> $${node.avg_cost_usd.toFixed(2)} USD</p>
       <p><strong>Operational Classification:</strong> ${node.is_bottleneck ? '<span style="color:#f43f5e; font-weight:700;">Critical Process Bottleneck (Rework Loop)</span>' : '<span style="color:#10b981; font-weight:700;">Standard Clinical Stage</span>'}</p>
       ${node.is_bottleneck ? '<div style="background: rgba(244,63,94,0.1); border: 1px solid rgba(244,63,94,0.3); border-radius: 8px; padding: 0.75rem; color: #fecdd3;">Root Cause: Failure to sign radiation consent intake Form 4B prior to patient transfer to radiology suite.</div>' : ''}
@@ -554,7 +554,7 @@ function showEdgeModal(edge) {
     <div style="display: flex; flex-direction: column; gap: 0.75rem;">
       <p><strong>Origin:</strong> ${edge.source}</p>
       <p><strong>Destination:</strong> ${edge.target}</p>
-      <p><strong>Patient Volume:</strong> ${edge.frequency} occurrences</p>
+      <p><strong>Patient Volume:</strong> ${edge.frequency.toLocaleString("en-US")} occurrences</p>
       <p><strong>Average Transition Time:</strong> ${edge.avg_duration_minutes} minutes</p>
       <p><strong>Flow Archetype:</strong> ${edge.is_loopback ? '<span style="color:#f43f5e; font-weight:700;">Deviant Loop-Back (Administrative Rework)</span>' : '<span style="color:#38bdf8; font-weight:700;">Linear Clinical Progression</span>'}</p>
     </div>
