@@ -158,20 +158,24 @@ function initNetworkGraph() {
   };
 
   const options = {
-    physics: {
-      enabled: true,
-      solver: "forceAtlas2Based",
-      forceAtlas2Based: {
-        gravitationalConstant: -70,
-        centralGravity: 0.015,
-        springLength: 140,
-        springConstant: 0.08,
-        damping: 0.4
-      },
-      stabilization: {
-        iterations: 150
-      }
-    },
+    
+physics: {
+  enabled: true,
+  solver: "forceAtlas2Based",
+  forceAtlas2Based: {
+    gravitationalConstant: -70,
+    centralGravity: 0.015,
+    springLength: 180,
+    springConstant: 0.05,
+    damping: 0.6
+  },
+  stabilization: {
+    enabled: true,
+    iterations: 200,
+    fit: true
+  },
+  minVelocity: 0.75
+},
     interaction: {
       hover: true,
       tooltipDelay: 100,
