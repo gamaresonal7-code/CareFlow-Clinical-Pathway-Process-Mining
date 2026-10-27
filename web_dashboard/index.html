@@ -114,6 +114,7 @@
           </div>
         </div>
 
+
         <!-- Filter bar -->
         <div class="visualizer-filter-bar">
           <div class="filter-item">
@@ -143,12 +144,16 @@
             <span class="legend-item"><span class="legend-dot endpoint"></span> Final Disposition</span>
           </div>
         </div>
+      
 
         <!-- The Vis.js canvas container -->
         <div id="processNetworkCanvas" class="network-canvas-container">
           <div class="canvas-loading-spinner" id="canvasSpinner">
             <i class="fa-solid fa-spinner fa-spin"></i> Computing Process Layout...
           </div>
+           <button id="resetGraphViewBtn" type="button">
+        Reset View
+      </button>
         </div>
 
         <!-- Graph Alert Banner -->
@@ -164,6 +169,7 @@
         </div>
       </section>
 
+      
       <!-- Right Column: Tabs for Variants, Bottleneck Ranking, and ROI Simulator -->
       <aside class="panel side-panel">
         <div class="tabs-nav">

@@ -198,6 +198,23 @@ physics: {
       showEdgeModal(edgeObj.raw);
     }
   });
+
+  // Reset the process graph to its original overview
+function resetGraphView() {
+    if (appState.network) {
+        appState.network.fit({
+            animation: {
+                duration: 500,
+                easingFunction: "easeInOutQuad"
+            }
+        });
+    }
+  }
+  const resetButton = document.getElementById("resetGraphViewBtn");
+
+if (resetButton) {
+    resetButton.addEventListener("click", resetGraphView);
+}
 }
 
 function formatNodeLabel(title, count) {
