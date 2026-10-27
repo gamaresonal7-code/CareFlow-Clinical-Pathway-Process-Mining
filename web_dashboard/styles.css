@@ -1073,15 +1073,8 @@ body {
     outline-offset: 2px;
 }
 
-#resetGraphViewBtn i {
-    margin-right: 6px;
-}
-
-#resetGraphViewBtn:active {
-    transform: scale(0.98);
-}
-
-#resetGraphViewBtn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+/* Make keyboard focus clearly visible on dashboard buttons */
+button:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
 }
