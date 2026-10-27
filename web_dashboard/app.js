@@ -212,10 +212,18 @@ function resetGraphView() {
   }
   const resetButton = document.getElementById("resetGraphViewBtn");
 
-if (resetButton) {
-    resetButton.addEventListener("click", resetGraphView);
-}
-}
+resetButton.addEventListener("click", () => {
+  if (!appState.network) return;
+
+  appState.network.fit({
+    animation: {
+      duration: 500,
+      easingFunction: "easeInOutQuad"
+    }
+  });
+
+  appState.network.unselectAll();
+});
 
 function formatNodeLabel(title, count) {
   // Wrap text cleanly
